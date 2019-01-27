@@ -674,10 +674,10 @@
 
     &:hover {
       text-decoration: underline;
+    }
 
-      .fa {
-        color: lighten($dark-text-color, 7%);
-      }
+    &:not(.mention) {
+      color: lighten($ui-highlight-color, 8%);
     }
 
     &.mention {
@@ -688,10 +688,6 @@
           text-decoration: underline;
         }
       }
-    }
-
-    .fa {
-      color: $dark-text-color;
     }
   }
 
@@ -1065,6 +1061,10 @@
 
   a {
     color: $lighter-text-color;
+
+    &:not(.mention) {
+      color: $lighter-text-color;
+    }
   }
 }
 
@@ -4053,6 +4053,10 @@ a.status-card.compact:hover {
 
   .status__content a {
     color: $highlight-text-color;
+
+    &:not(.mention) {
+      color: $highlight-text-color;
+    }
   }
 
   .status__content,
